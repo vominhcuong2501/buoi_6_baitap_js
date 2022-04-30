@@ -98,8 +98,12 @@ document.getElementById("xuat10Dong").onclick = function() {
 document.getElementById("inso").onclick = function() {
     var songuyen = document.getElementById("songuyen").value*1;
     var result = "";
-    for(var i = 1; i < songuyen; i++) {
-        result += i + " ";
+    for(var i = 2; i <= songuyen; i++) {
+        if(i == 2) {
+            result = i + " ";
+        }else if(i > 1 && i % 2 !== 0) {
+            result += i + " ";
+        }
     }
     document.getElementById("thongbao5").innerHTML = result;
 }
