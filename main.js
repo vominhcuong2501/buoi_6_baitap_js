@@ -5,9 +5,10 @@
  * 
  */
 document.getElementById("xuat").onclick = function() {
+    var number = document.querySelector("#nhapSoDuongNhoNhat").value*1;
     var tong = 0; 
     var i = 0;
-    while( tong < 10000) {
+    while( tong < number) {
         tong += i + 1;
         i++;
     }
